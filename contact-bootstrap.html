@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>tp1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script>
+            function changeValue() {
+                var txt = "Katia";
+                var name = document.getElementById("pId");
+                name.value = txt;
+           
+                console.log(name)
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-expand-md sticky-top border-top border-bottom navbar-dark bg-dark">
+            
+                <div class="navbar-brand">
+                    
+                    <img class="d-inline-block align-middle mr-2" src="dauphine logo.jpg" width="200">
+
+                </div>
+                <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+
+                <div class="justify-content-between">
+                    <ul class="navbar-nav" >
+                        <li><a class="nav-link" href="#down">Menu local vers idgender2</a></li>
+                        <li><a class="nav-link" href="https://passeport.dauphine.fr/" target="_blank" accesskey="p">Passeport dauphine</a></li>
+                      
+                    </ul>
+                </div>
+        
+        
+        </nav>
+
+        <form>
+       
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="pId" placeholder="Name" maxlength="10">
+                    </div>
+                 </div>
+    
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Middle</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+    
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="form-check">
+                            <input type="radio" name="gender" class="form-check-input">
+                            <label class="form-check-label">Male</label>
+                            
+                     
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-check">
+                            <input type="radio" name="gender" class="form-check-input">
+                            <label class="form-check-label">Female</label>
+                            
+                        </div>
+                    </div>
+                    </div>
+<br/>
+            
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label id="label-email">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <br/>
+                                    <input type="checkbox" class="form-check-input">
+                                    <label>Contact ?</label>
+                                    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-md-4 space">
+                                <button type="submit" class="btn btn-block btn-primary">Soumettre</button>
+                            </div>
+
+                            <div class="col-md-4 space">
+                                <button type="reset" class="btn btn-block btn-danger">Remettre à zero</button>
+                                
+                            </div>
+
+                            <div class="col-md-4 space">
+                                <button type="submit" class="btn btn-block btn-primary" onclick="changeValue()">Appel javascript change idname</button>
+                            </div>
+                            
+                        </div>
+    
+                       
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    
+
+        <br/>
+        <br/>
+        <br/>
+        <p id="down">This is a paragraph to test my link and go down</p>
+
+    </body>
+
+</html>

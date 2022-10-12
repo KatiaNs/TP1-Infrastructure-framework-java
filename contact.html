@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>tp1</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function changeValue() {
+                var txt = "Katia";
+                var name = document.getElementById("pId").value;
+                document.getElementById("pId").value = txt;
+           
+                console.log(name)
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="#down">Menu local vers idgender2</a></li>
+            <li><a href="https://passeport.dauphine.fr/" target="_blank" accesskey="p">Passeport dauphine</a></li>
+        </ul>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <img src="dauphine logo.jpg">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="label">Name : </span><input id="pId" type="text" placeholder="Nom" maxlength="10">
+                        <span class="label">Middle : </span><input type="text">
+                        <span class="label">Last name : </span><input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="label">Male : </span><input type="radio"> 
+                        <span class="label">Female : </span><input type="radio">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span class="label">Phone : </span><input type="text">
+                        <span id="label-email">Email : </span><input type="text">
+                        <span class="label">Contact ? </span><input type="checkbox">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" onclick="" value="Soumettre">
+                        <input type="reset" value="Remettre à zero">
+                        <input type="button" onclick="" value="Appel javascript change idname">
+                        <input type="button" onclick="changeValue()" value="Appel javascript change idname">
+                    </td>
+                </tr>
+               
+               
+            </table>
+        </form>
+
+        <br/>
+        <br/>
+        <br/>
+        <p id="down">This is a paragraph to test my link and go down</p>
+
+    </body>
+
+</html>
